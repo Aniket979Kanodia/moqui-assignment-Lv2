@@ -1,4 +1,4 @@
-
+﻿
 <services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-2.1.xsd">
     <service verb="create" noun="AkExample" displayName="Create an Example" type="entity-auto" allow-remote="true">
     <in-parameters>
@@ -20,8 +20,5 @@
             <auto-parameters include="nonpk"/>
 
         </in-parameters>
-        <out-parameters>
-            <auto-parameters include="pk" required="true"/>
-        </out-parameters>
     </service>
     </services>
