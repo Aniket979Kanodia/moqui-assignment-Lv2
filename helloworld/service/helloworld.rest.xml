@@ -1,0 +1,15 @@
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/rest-api-2.1.xsd"
+          name="helloworld" displayName="Helloworld REST API" version="2.0.0">
+    <resource name="helloworldex" require-authentication="anonymous-all">
+        <method type="get"><entity name="AkExample" operation="list"/></method>
+        <method type="post"><service name="moqui.helloworld.HelloworldServices.create#AkExample"/></method>
+        <id name="helloworldId">
+        <method type="get"><entity name="AkExample" operation="one"/></method>
+        <method type="patch"><service name="moqui.helloworld.HelloworldServices.update#AkExample"/></method>
+        </id>
+
+
+    </resource>
+
+</resource>
