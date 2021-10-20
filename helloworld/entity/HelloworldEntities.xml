@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/entity-definition-2.1.xsd">
-    <entity entity-name="AkExample" package="helloworld">
-        <field name="helloworldId" type="id" is-pk="true"/>
-        <field name="helloworldName" type="text-medium"/>
-        <field name="helloworldDate" type="date"/>
-        <field name="helloworldPrice" type="number-float"/>
-        <field name="helloworldQuantity" type="number-integer"/>
+    <entity entity-name="Examples" package="helloworld">
+        <field name="examplesId" type="id" is-pk="true"/>
+        <field name="examplesName" type="text-medium"/>
+        <field name="examplesDate" type="date"/>
+        <field name="examplesPrice" type="number-float"/>
+        <field name="examplesQuantity" type="number-integer"/>
     </entity>
 </entities>
