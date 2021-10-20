@@ -1,0 +1,22 @@
+﻿
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-2.1.xsd">
+    <service verb="create" noun="Examples" displayName="Create an Example" type="entity-auto" allow-remote="true">
+    <in-parameters>
+        <auto-parameters include="nonpk"/>
+
+        <!-- This is automatic based on parameter type: <parameter name="exampleSize"><number-decimal/></parameter> -->
+
+    </in-parameters>
+    <out-parameters>
+        <auto-parameters include="pk" required="true"/>
+    </out-parameters>
+ </service>
+    <service verb="update" noun="Examples" displayName="Update an Example" type="entity-auto" allow-remote="true">
+        <in-parameters>
+            <auto-parameters include="pk" required="true"/>
+            <auto-parameters include="nonpk"/>
+
+        </in-parameters>
+
+    </service>
+    </services>
